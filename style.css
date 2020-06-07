@@ -515,7 +515,7 @@ hr {
   }
 
   .project-img {
-    margin: auto;
+    margin-right: auto;
     width: 90%;
     perspective: 0;
   }
@@ -586,7 +586,6 @@ hr {
   .about-content {
     display: block;
     width: 100%;
-    margin: auto;
   }
 
   .about-content p {
@@ -595,13 +594,13 @@ hr {
   }
 
   .about-content img {
-    width: 350px;
+	width: 350px;
     height: 200px;
   }
 
-  .about-content img {
-    margin: auto;
-    width: 90%;
+  .social {
+	text-align: center;
+	margin-top: 100px;
   }
 }
 /* Animations */
