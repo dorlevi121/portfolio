@@ -502,7 +502,7 @@ hr {
 
 @media only screen and (max-width: 600px) {
   #projects {
-    height: 400vh;
+    height: 390vh;
   }
   .project {
     display: block;
@@ -511,11 +511,11 @@ hr {
 
   .project-content {
     margin: auto;
-    width: 100%;
+    width: 90%;
   }
 
   .project-img {
-    margin: auto;
+    margin-right: auto;
     width: 90%;
     perspective: 0;
   }
