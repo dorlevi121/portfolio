@@ -516,8 +516,15 @@ hr {
     width: 90%;
   }
 
+  .project-content p {
+    text-align: center;
+  }
+
+  .project-content span {
+    display: block;
+  }
+
   .project-img {
-    margin-right: auto;
     width: 90%;
     perspective: 0;
   }
@@ -529,6 +536,7 @@ hr {
   }
 
   .tag {
+	  text-align: center;
     font-size: 0.9rem;
     border-radius: 3px 0 0 3px;
     height: 23px;
@@ -593,6 +601,9 @@ hr {
   font-size: 2rem;
   transition: all 0.2s ease-in-out;
 }
+.social a:hover {
+	transform: scale(.9);
+  }
 
 .social .fa-codepen:hover {
   color: #fcd000;
