@@ -103,9 +103,9 @@ hr {
   }
 }
 
+
 /* Header */
 .showcase {
-  width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -388,6 +388,7 @@ hr {
     100% 92.34%
   );
 }
+
 
 .project {
   display: flex;
@@ -683,6 +684,16 @@ hr {
     transform: translateX(0);
   }
 }
+
+@keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
 
 @keyframes hr-animation {
   0% {

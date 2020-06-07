@@ -12,9 +12,11 @@
       integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
-  <body>
-    <section class="showcase">
+  <body >
+
+    <section class="showcase" data-aos="slide-left" ata-aos-duration="1000">
       <div class="video-container">
         <video src="./Words.mp4" autoplay muted loop></video>
       </div>
@@ -25,7 +27,7 @@
       </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" data-aos="fade-up" >
       <h3>Projects</h3>
       <hr>
       <div class="Projects">
@@ -59,7 +61,7 @@
 
 
       <!-- Mnagment System -->
-      <div class="project">
+      <div class="project" >
         <div class="project-img">
           <img src="http://up419.siz.co.il/up2/jznxnma2mrzk.png" alt="" />
         </div>
@@ -73,9 +75,9 @@
             <ul class="tags">
               <li><a class="tag">React</a></li>
               <li><a  class="tag">Redux</a></li>
-              <li><a class="tag">TypeScript</a></li>
-              <li><a  class="tag">MongoDB</a></li>
               <li><a class="tag">NodeJS</a></li>
+              <li><a  class="tag">MongoDB</a></li>
+              <li><a class="tag">TypeScript</a></li>
             </ul>
           </p>
           <div class="links">
@@ -86,7 +88,7 @@
       </div>
 
         <!-- Resturent Project -->
-        <div class="project">
+        <div class="project" >
           <div class="project-img">
             <img src="http://up419.siz.co.il/up3/jyhjtjtohynq.jpg" alt="" />
           </div>
@@ -104,7 +106,6 @@
                 <li><a class="tag">Redux</a></li>
                 <li><a class="tag">TypeScript</a></li>
                 <li><a class="tag">SASS</a></li>
-                <li><a class="tag">HTML</a></li>
               </ul>
             </p>
             <div class="links">
@@ -141,5 +142,10 @@
         <a href="https://github.com/dorlevi121" target="_blank" class="fab fa-github"></a>
       </div>
     </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
