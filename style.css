@@ -276,14 +276,16 @@ section {
 }
 
 @media only screen and (max-width: 600px) {
-  .showcase {
-  }
+	.video-container:after {
+		background: rgba(0, 0, 0, 0.85);
+	  }
 }
 
 /* Projects */
 #projects {
   background-color: #fafafa;
   height: 170vh;
+  width: 100vw;
   clip-path: polygon(
     100% 0%,
     0% 0%,
@@ -427,7 +429,6 @@ section {
 
 .project-img {
   width: 40%;
-  perspective: 600px;
 }
 
 .project-img img {
@@ -508,7 +509,7 @@ section {
 
 @media only screen and (max-width: 600px) {
   #projects {
-    height: 300vh;
+    height: 310vh;
   }
   .project {
     display: block;
@@ -527,11 +528,9 @@ section {
   }
 
   .project-img img {
-    width: 400px;
+    width: 380px;
     height: 200px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 15px;
-    transform: rotateY(10deg) translateX(100px);
+    transform: none;
   }
 }
 
