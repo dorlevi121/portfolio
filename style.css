@@ -393,6 +393,7 @@ hr {
 .project {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 100px;
 }
 
@@ -428,6 +429,7 @@ hr {
   width: 40%;
   perspective: 600px;
 }
+
 
 .project-img img {
   width: 500px;
@@ -566,7 +568,7 @@ hr {
 /* About */
 
 #about {
-  height: 100vh;
+  height: 95vh;
 }
 
 .about-content {
@@ -589,6 +591,10 @@ hr {
   width: 400px;
   overflow: hidden;
   border-radius: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .social {
@@ -642,6 +648,17 @@ hr {
     text-align: center;
     margin-top: 100px;
   }
+}
+
+/* Fotter */
+footer {
+  background-color: var(--primary-color);
+  height: 5vh;
+}
+
+footer p {
+  color: #fafafa;
+  text-align: center;
 }
 /* Animations */
 
