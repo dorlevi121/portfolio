@@ -426,6 +426,8 @@ hr {
 
 .project-img {
   width: 40%;
+  perspective: 600px;
+
 }
 
 .project-img img {
