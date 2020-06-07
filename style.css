@@ -502,7 +502,7 @@ hr {
 
 @media only screen and (max-width: 600px) {
   #projects {
-    height: 350vh;
+    height: 400vh;
   }
   .project {
     display: block;
@@ -511,11 +511,11 @@ hr {
 
   .project-content {
     margin: auto;
-    width: 90%;
+    width: 100%;
   }
 
   .project-img {
-    margin-right: auto;
+    margin: auto;
     width: 90%;
     perspective: 0;
   }
@@ -524,6 +524,32 @@ hr {
     width: 350px;
     height: 200px;
     transform: none;
+  }
+
+  .tag {
+    font-size: 0.9rem;
+    border-radius: 3px 0 0 3px;
+    height: 23px;
+    line-height: 23px;
+    padding: 0 15px 0 10px;
+    margin: 0 7px 7px 0;
+  }
+
+  .tag::before {
+    height: 3px;
+    left: 10px;
+    width: 1px;
+    top: 10px;
+  }
+
+  .tag::after {
+    border-bottom: 10px solid transparent;
+    border-left: 7px solid #eee;
+    border-top: 10px solid transparent;
+  }
+
+  .links {
+    text-align: center;
   }
 }
 
@@ -594,13 +620,14 @@ hr {
   }
 
   .about-content img {
-	width: 350px;
+    margin: auto;
+    width: 350px;
     height: 200px;
   }
 
   .social {
-	text-align: center;
-	margin-top: 100px;
+    text-align: center;
+    margin-top: 100px;
   }
 }
 /* Animations */
