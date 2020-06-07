@@ -604,6 +604,7 @@ hr {
 
 .social a {
   margin: 0 10px;
+  text-align: center;
   font-size: 2rem;
   transition: all 0.2s ease-in-out;
 }
@@ -634,6 +635,7 @@ hr {
   }
 
   .about-content p {
+    text-align: center;
     margin: auto;
     width: 90%;
   }
@@ -646,7 +648,7 @@ hr {
 
   .social {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 10px;
   }
 }
 
