@@ -281,8 +281,7 @@ hr {
 /* Projects */
 #projects {
   background-color: #fafafa;
-  height: 170vh;
-  width: 100vw;
+  padding-bottom: 150px;
   clip-path: polygon(
     100% 0%,
     0% 0%,
@@ -427,7 +426,6 @@ hr {
 .project-img {
   width: 40%;
   perspective: 600px;
-
 }
 
 .project-img img {
@@ -504,8 +502,9 @@ hr {
 
 @media only screen and (max-width: 600px) {
   #projects {
-    height: 390vh;
+    padding-bottom: 200px;
   }
+
   .project {
     display: block;
     margin-top: 100px;
@@ -536,7 +535,7 @@ hr {
   }
 
   .tag {
-	  text-align: center;
+    text-align: center;
     font-size: 0.9rem;
     border-radius: 3px 0 0 3px;
     height: 23px;
@@ -602,8 +601,8 @@ hr {
   transition: all 0.2s ease-in-out;
 }
 .social a:hover {
-	transform: scale(.9);
-  }
+  transform: scale(0.9);
+}
 
 .social .fa-codepen:hover {
   color: #fcd000;
