@@ -95,7 +95,7 @@ hr {
 
 @media only screen and (max-width: 600px) {
   hr {
-    width: 50vw;
+    width: 70vw;
     animation: none;
   }
 
@@ -584,6 +584,12 @@ hr {
   .project-content span {
     display: block;
   }
+
+  .project-content ul {
+    display: block;
+    text-align: center;
+  }
+
 
   .project-img {
     width: 90%;
