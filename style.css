@@ -598,6 +598,9 @@ hr {
   .project-img img {
     width: 350px;
     height: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid #ddd;
     transform: none;
   }
 
@@ -610,6 +613,9 @@ hr {
   .project:nth-child(even) .project-img img {
     width: 350px;
     height: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid #ddd;
     transform: none;
   }
 
@@ -674,7 +680,6 @@ hr {
   overflow: hidden;
   border-radius: 5px;
   border: 1px solid #ddd;
-  border-radius: 4px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: all 0.2s ease-in-out;
 }
