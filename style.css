@@ -95,12 +95,18 @@ hr {
 
 @media only screen and (max-width: 600px) {
   hr {
-    width: 25vw;
+    width: 50vw;
     animation: none;
   }
 
   h2 {
     font-size: 40px;
+    letter-spacing: 5px;
+  }
+
+  h1 {
+    font-size: 60px;
+    letter-spacing: 10px;
   }
 }
 
