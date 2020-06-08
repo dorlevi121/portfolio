@@ -590,7 +590,6 @@ hr {
     text-align: center;
   }
 
-
   .project-img {
     width: 90%;
     perspective: 0;
@@ -611,6 +610,14 @@ hr {
   .project:nth-child(even) .project-img img {
     width: 350px;
     height: 200px;
+    transform: none;
+  }
+
+  .project:nth-child(even) .project-img img:hover {
+    transform: none;
+  }
+
+  .project-img img:hover {
     transform: none;
   }
 
