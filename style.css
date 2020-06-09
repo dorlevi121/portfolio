@@ -170,6 +170,56 @@ hr {
   top: 2450px;
 }
 
+@media only screen and (max-width: 600px) {
+  .programming-icons {
+    display: none;
+  }
+  
+  .programming-icons:hover {
+  }
+  
+  .react-img {
+    left: 100px;
+    top: 500px;
+  }
+  
+  .css-img {
+    left: 200px;
+    top: 600px;
+  }
+  
+  .html-img {
+   left:200x;
+    top: 700px;
+  }
+  
+  .javascript-img {
+    left: 200px;
+    top: 600px;
+  }
+  
+  .mongodb-img {
+    left: 200px;
+    top: 800px;
+  }
+  
+  .nodejs-img {
+    left: 150px;
+    top: 600x;
+  }
+  
+  .sass-img {
+    left: 200px;
+    top: 1000px;
+  }
+  
+  .typescript-img {
+    left: 400px;
+    top: 100px;
+  }
+  
+}
+
 /* Header */
 .showcase {
   height: 100vh;
