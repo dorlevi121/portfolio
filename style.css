@@ -171,6 +171,10 @@ hr {
 }
 
 @media only screen and (max-width: 600px) {
+  .programming-icons:hover {
+    opacity: .2;
+  }
+
   .react-img {
     left: 50px;
     top: 750px;
@@ -204,13 +208,13 @@ hr {
   
   .sass-img {
     left: 50px;
-    top: 2500px;
+    top: 2400px;
   }
   
   .typescript-img {
     width: 40px;
     left: 50px;
-    top: 3200px;
+    top: 3100px;
   }
 }
 
@@ -673,7 +677,8 @@ hr {
 
   .project {
     display: block;
-    margin-top: 100px;
+    margin-top: 80px;
+    height: 90vh;
   }
 
   .project-content {
