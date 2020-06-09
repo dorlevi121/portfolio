@@ -110,6 +110,66 @@ hr {
   }
 }
 
+.programming-icons {
+  position: absolute;
+  width: 50px;
+  opacity: 0.2;
+  transition: all 0.2s ease-in-out;
+}
+
+.programming-icons:hover {
+  opacity: 0.5;
+}
+
+.react-img {
+  left: 200px;
+  top: 1000px;
+  animation-name: rotate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.css-img {
+  left: 1400px;
+  top: 1150px;
+}
+
+.html-img {
+  width: 30px;
+  left: 1000px;
+  top: 1400px;
+}
+
+.javascript-img {
+  left: 400px;
+  top: 1750px;
+}
+
+.mongodb-img {
+  width: 100px;
+  left: 1000px;
+  top: 1900px;
+  opacity: 0.23;
+}
+
+.nodejs-img {
+  width: 80px;
+  left: 300px;
+  top: 2600px;
+  opacity: 0.23;
+}
+
+.sass-img {
+  left: 1200px;
+  top: 2200px;
+}
+
+.typescript-img {
+  left: 800px;
+  top: 2450px;
+}
+
 /* Header */
 .showcase {
   height: 100vh;
@@ -817,5 +877,11 @@ footer p {
   }
   100% {
     width: 10vw;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
   }
 }
