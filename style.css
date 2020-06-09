@@ -171,53 +171,47 @@ hr {
 }
 
 @media only screen and (max-width: 600px) {
-  .programming-icons {
-    display: none;
-  }
-  
-  .programming-icons:hover {
-  }
-  
   .react-img {
-    left: 100px;
-    top: 500px;
+    left: 50px;
+    top: 750px;
   }
-  
+
   .css-img {
-    left: 200px;
-    top: 600px;
+    left: 270px;
+    top: 1400px;
   }
   
   .html-img {
-   left:200x;
-    top: 700px;
+    left: 120px;
+    top: 1150px;
   }
   
   .javascript-img {
-    left: 200px;
-    top: 600px;
+    width: 40px;
+    left: 80px;
+    top: 1800px;
   }
   
   .mongodb-img {
     left: 200px;
-    top: 800px;
+    top: 2120px;
   }
   
   .nodejs-img {
-    left: 150px;
-    top: 600x;
+    left: 250px;
+    top: 2820px;
   }
   
   .sass-img {
-    left: 200px;
-    top: 1000px;
+    left: 50px;
+    top: 2500px;
   }
   
   .typescript-img {
-    left: 400px;
-    top: 100px;
+    width: 40px;
+    left: 50px;
+    top: 3200px;
   }
-  
 }
 
 /* Header */
