@@ -185,11 +185,6 @@ hr {
     opacity: .1;
   }
 
-
-  .programming-icons:hover {
-    opacity: .1;
-  }
-
   .react-img {
     left: 50px;
     top: 750px;
@@ -250,6 +245,9 @@ hr {
   background-color: #fafafa;
 }
 
+video {
+  filter: blur(.3rem);
+}
 .video-container {
   position: absolute;
   top: 0;
@@ -257,8 +255,9 @@ hr {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: var(red) url("./Words.mp4") no-repeat center center/cover;
-  clip-path: polygon(
+  background: #fafafa;
+
+  /* clip-path: polygon(
     100% 0%,
     0% 0%,
     0% 97.85%,
@@ -362,8 +361,7 @@ hr {
     98% 92.53%,
     99% 92.435%,
     100% 92.34%
-  );
-  background: #e0e6e5;
+  ); */
 }
 
 .video-container video {
@@ -952,5 +950,76 @@ footer p {
 @keyframes rotate {
   100% {
     transform: rotate(360deg);
+  }
+}
+
+
+@keyframes move_wave {
+  0% {
+      transform: translateX(0) translateZ(0) scaleY(1)
+  }
+  50% {
+      transform: translateX(-25%) translateZ(0) scaleY(0.55)
+  }
+  100% {
+      transform: translateX(-50%) translateZ(0) scaleY(1)
+  }
+}
+
+.waveWrapperInner {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 30%;
+  bottom: -1px;
+}
+.bgTop {
+  z-index: 15;
+  opacity: 0.4;
+}
+.bgMiddle {
+  z-index: 10;
+  opacity: 0.6;
+}
+.bgBottom {
+  z-index: 5;
+  opacity: .7;
+}
+.wave {
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+.waveTop {
+  background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+animation: move-wave 3s;
+ -webkit-animation: move-wave 3s;
+ -webkit-animation-delay: 1s;
+ animation-delay: 1s;
+}
+.waveMiddle {
+  background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+  animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+  background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+  animation: move_wave 15s linear infinite;
+}
+
+@media only screen and (max-width: 600px) {
+  .waveWrapperInner {
+    width: 100%;
+    height: 20%;
+    bottom: 0px;
   }
 }
