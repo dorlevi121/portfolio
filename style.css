@@ -28,6 +28,15 @@ h1 {
   letter-spacing: 10px;
 }
 
+h2 {
+  font-weight: 100;
+  font-size: 60px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  letter-spacing: 10px;
+  transition: all 0.4s ease-in-out;
+}
+
 h2:hover {
   transform: skewY(2deg) skewX(15deg) scale(1.1);
   overflow: hidden;
@@ -41,20 +50,10 @@ h2:hover {
   background-position: 100%;
 }
 
-h2 {
-  font-weight: 100;
-  font-size: 60px;
-  line-height: 1.2;
-  margin-bottom: 15px;
-  letter-spacing: 10px;
-  transition: all 0.4s ease-in-out;
-}
-
 h3 {
   position: relative;
   display: inline-block;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 43%;
   font-size: 60px;
   font-weight: 100;
   letter-spacing: 5px;
@@ -71,11 +70,22 @@ h3 {
   -webkit-text-fill-color: transparent;
   background-size: 200% 100%;
   background-position: 100%;
-  transition: background-position 0.4s ease-in-out;
+  transition: 1s;
+  transform-origin: left;
+  transform: scaleX(0);
 }
 
 h3:hover {
   background-position: 0 100%;
+}
+
+h3[data-scroll="in"] {
+  transform: scaleX(1);
+}
+
+h3[data-scroll="in"]::before {
+  transform: scaleX(0);
+  transition-delay: 0.5s;
 }
 
 hr {
@@ -182,7 +192,7 @@ hr {
 
 @media only screen and (max-width: 600px) {
   .programming-icons {
-    opacity: .1;
+    opacity: 0.1;
   }
 
   .react-img {
@@ -194,33 +204,33 @@ hr {
     left: 270px;
     top: 1400px;
   }
-  
+
   .html-img {
     left: 120px;
     top: 1150px;
   }
-  
+
   .javascript-img {
     width: 40px;
     left: 80px;
     top: 1800px;
   }
-  
+
   .mongodb-img {
     left: 200px;
     top: 2120px;
   }
-  
+
   .nodejs-img {
     left: 250px;
     top: 2820px;
   }
-  
+
   .sass-img {
     left: 50px;
     top: 2400px;
   }
-  
+
   .typescript-img {
     width: 40px;
     left: 50px;
@@ -246,7 +256,7 @@ hr {
 }
 
 video {
-  filter: blur(.3rem);
+  filter: blur(0.1rem);
 }
 .video-container {
   position: absolute;
@@ -381,7 +391,7 @@ video {
   width: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: radial-gradient(rgba(0,41,80,.94),rgba(1,1,1,.94));
   position: absolute;
 }
 
@@ -446,7 +456,7 @@ video {
   .video-container:after {
     background: rgba(0, 0, 0, 0.85);
   }
-  
+
   .video-container {
     clip-path: polygon(
       100% 0%,
@@ -558,7 +568,7 @@ video {
 
 /* Projects */
 #projects {
-  background-color: #fafafa;
+  background-color: #f3f3f3;
   padding-bottom: 150px;
   clip-path: polygon(
     100% 0%,
@@ -753,6 +763,7 @@ video {
   position: relative;
   margin: 0 10px 10px 0;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .tag::before {
@@ -768,7 +779,7 @@ video {
 }
 
 .tag::after {
-  background: #fff;
+  background: #f3f3f3;
   border-bottom: 13px solid transparent;
   border-left: 10px solid #eee;
   border-top: 13px solid transparent;
@@ -1061,16 +1072,15 @@ footer p {
   }
 }
 
-
 @keyframes move_wave {
   0% {
-      transform: translateX(0) translateZ(0) scaleY(1)
+    transform: translateX(0) translateZ(0) scaleY(1);
   }
   50% {
-      transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    transform: translateX(-25%) translateZ(0) scaleY(0.55);
   }
   100% {
-      transform: translateX(-50%) translateZ(0) scaleY(1)
+    transform: translateX(-50%) translateZ(0) scaleY(1);
   }
 }
 
@@ -1091,7 +1101,7 @@ footer p {
 }
 .bgBottom {
   z-index: 5;
-  opacity: .7;
+  opacity: 0.7;
 }
 .wave {
   position: absolute;
@@ -1106,10 +1116,10 @@ footer p {
   background-size: 50% 100px;
 }
 .waveAnimation .waveTop {
-animation: move-wave 3s;
- -webkit-animation: move-wave 3s;
- -webkit-animation-delay: 1s;
- animation-delay: 1s;
+  animation: move-wave 3s;
+  -webkit-animation: move-wave 3s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 .waveMiddle {
   background-size: 50% 120px;
@@ -1126,6 +1136,6 @@ animation: move-wave 3s;
 
 @media only screen and (max-width: 600px) {
   .waveWrapperInner {
-display: none;
+    display: none;
   }
 }
