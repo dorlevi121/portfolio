@@ -124,6 +124,19 @@ hr {
   }
 }
 
+section {
+  animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .programming-icons {
   position: absolute;
   width: 50px;
@@ -246,6 +259,7 @@ hr {
     top: 3300px;
   }
 }
+
 
 /* Header */
 .showcase {
@@ -757,7 +771,7 @@ video {
 }
 
 .tag {
-  background: #eee;
+  background: #e6e6e6;
   border-radius: 3px 0 0 3px;
   color: #999;
   display: inline-block;
@@ -785,7 +799,7 @@ video {
 .tag::after {
   background: #f3f3f3;
   border-bottom: 13px solid transparent;
-  border-left: 10px solid #eee;
+  border-left: 10px solid #e6e6e6;
   border-top: 13px solid transparent;
   content: "";
   position: absolute;
