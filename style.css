@@ -133,15 +133,8 @@ section {
   animation: fade 1s ease-in-out;
 }
 
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
+/* Background Icons */
 .programming-icons {
   position: absolute;
   width: 50px;
@@ -991,7 +984,7 @@ video {
 
 @media only screen and (max-width: 600px) {
   #about {
-    height: auto;
+    height: 100%;
   }
   .about-content {
     display: block;
@@ -1114,6 +1107,8 @@ footer p {
   }
 }
 
+
+/* Wave */
 .waveWrapperInner {
   position: absolute;
   width: 100%;
